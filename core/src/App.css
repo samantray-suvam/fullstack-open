@@ -1,0 +1,70 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.dashboard h1 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #a1a1aa;
+  margin-bottom: 32px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.part-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  text-align: left;
+  color: inherit;
+  background: #202124;
+  border: 1px solid #414141;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.part-card:hover {
+  border-color: #646cff;
+  transform: translateY(-3px);
+}
+
+.part-label {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.part-description {
+  color: #b8b8b8;
+  line-height: 1.5;
+}
+
+.card-action {
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+.workspace {
+  padding: 24px;
+}
+
+.workspace > button {
+  margin-bottom: 24px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
